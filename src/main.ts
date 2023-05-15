@@ -25,16 +25,18 @@ app.use(PrimeVue, {
 		},
 		panel: {
 			// Panel Pass Through Options: https://primevue.org/panel
-			root: { style: { fontWeight: "bold" } },
+			root: { class: "border border-gray-100 rounded shadow-sm" },
 			header: (slotProps: { props: PanelProps; state: PanelState }) => {
 				return {
-					class: slotProps.state.d_collapsed ? "bg-green-500" : "bg-red-500",
+					class: "bg-slate-50 text-gray-700 p-4 border-b border-gray-200 flex justify-between items-center font-bold uppercase tracking-wide",
 					title: "My Custom Panel Component",
 					"data-toggleable": slotProps.props.toggleable,
 					"data-collapsed": slotProps.state.d_collapsed,
 				};
 			},
-			title: { class: "text-white" },
+			content: {
+				class: "p-4",
+			}
 		},
 		card: {
 			// Card Pass Through Options: https://primevue.org/card 

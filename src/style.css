@@ -12,3 +12,6 @@ p {
   @apply mb-2
 }
 
+.p-ink {
+  @apply absolute scale-0
+}
