@@ -5,4 +5,10 @@
 
 body {
   font-family: var(--font-family);
+  @apply p-4
 } 
+
+p {
+  @apply mb-2
+}
+
